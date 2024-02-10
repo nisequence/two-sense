@@ -14,6 +14,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    lastUpload: {
+        type: Date,
+        required: false,
+    }
 })
 
 module.exports = mongoose.model("User", UserSchema);

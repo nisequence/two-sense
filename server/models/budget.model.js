@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const BudgetSchema = new mongoose.Schema({
-  budgetCat: {
+  budgetName: {
     type: String,
     required: true,
   },
@@ -9,12 +9,12 @@ const BudgetSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  assignedUser: {
-    type: String,
-    required: false,
+  recurring: {
+    type: Boolean,
+    required: true,
   },
-  budgetBase: {
-    type: String,
+  initialization: {
+    type: Date,
     required: true,
   },
   ownerID: {
