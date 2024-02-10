@@ -4,6 +4,7 @@ const UserSchema = new mongoose.Schema({
     userName: {
         type: String, // What datatype this is expecting
         required: true, // default is false
+        unique: true, // only one account per username
     },
     email: {
         type: String,
